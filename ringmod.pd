@@ -1,0 +1,14 @@
+#N canvas 958 230 450 300 10;
+#X obj 31 43 hsl 128 15 0 127 0 0 empty empty Freq -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 224 37 inlet~;
+#X obj 118 87 mtof;
+#X obj 117 118 osc~;
+#X obj 234 154 *~;
+#X obj 217 206 outlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 4 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X coords 0 -1 1 1 170 60 1 10 10;
