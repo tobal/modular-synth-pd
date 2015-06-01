@@ -1,4 +1,4 @@
-#N canvas 970 272 667 690 10;
+#N canvas 140 326 667 690 10;
 #X obj 68 194 mtof;
 #X obj 39 299 osc~;
 #X obj 46 42 hsl 128 15 0 127 0 0 empty empty OSC_freq -2 -8 0 10 -262144
@@ -20,7 +20,7 @@
 #X obj 145 276 *~;
 #X obj 68 225 *~;
 #X obj 488 42 inlet~;
-#X text 17 13 CV;
+#X text 16 26 CV;
 #X obj 296 517 +~;
 #X obj 407 194 *~;
 #X obj 46 75 hsl 128 15 0 5000 0 0 empty empty Modulation -2 -8 0 10
