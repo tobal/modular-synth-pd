@@ -1,0 +1,20 @@
+#N canvas 595 181 1165 455 10;
+#X obj 556 51 phasor~;
+#X obj 569 -43 hsl 128 15 0 127 0 0 empty empty Freq -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 564 14 mtof~;
+#X obj 556 73 *~ 2951;
+#X obj 581 298 outlet~;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X coords 0 1 2051 -1 200 140 1;
+#X restore 173 15 graph;
+#X msg 148 220 square_array 1 0 -0.111111 0 0.04 0 -0.204082 0 0.0123457
+0 -0.00826446 0;
+#X msg 620 120 set square_array;
+#X obj 563 156 tabread4~ square_array;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 8 0;
+#X connect 7 0 8 0;
+#X connect 8 0 4 0;
