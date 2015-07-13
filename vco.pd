@@ -1,14 +1,14 @@
-#N canvas 876 126 955 773 10;
+#N canvas 644 126 955 773 10;
 #X obj 78 174 mtof;
 #X obj 39 299 osc~;
 #X obj 46 42 hsl 128 15 0 127 0 0 empty empty OSC_freq -2 -8 0 10 -262144
--1 -1 7800 1;
-#X obj 274 607 outlet~;
+-1 -1 3600 1;
+#X obj 291 674 outlet~;
 #X obj 122 299 phasor~;
 #X obj 239 307 phasor~;
 #X obj 205 42 vradio 15 1 0 4 empty empty Waveform 0 -8 0 10 -262144
--1 -1 1;
-#X floatatom 263 194 5 0 0 0 - - -, f 5;
+-1 -1 0;
+#X floatatom 263 194 5 0 0 0 - - -;
 #X text 223 41 Sinus;
 #X text 224 56 Sawtooth;
 #X obj 162 194 == 0;
@@ -25,7 +25,7 @@
 -262144 -1 -1 0 1;
 #X obj 243 338 expr~ $v1 > $v2;
 #X obj 46 110 hsl 128 15 0 100 0 0 empty empty Pulse_width -2 -8 0
-10 -262144 -1 -1 5400 1;
+10 -262144 -1 -1 6400 1;
 #X obj 326 193 / 100;
 #X text 225 71 Square;
 #X text 225 87 Triangle;
@@ -41,6 +41,9 @@
 #X obj 244 387 -~ 1;
 #X obj 383 460 -~ 0.25;
 #X obj 361 485 *~ 4;
+#X obj 328 534 limiter~;
+#X obj 262 576 z~ 64;
+#X obj 281 623 *~;
 #X connect 0 0 15 0;
 #X connect 0 0 14 0;
 #X connect 0 0 13 0;
@@ -61,7 +64,8 @@
 #X connect 14 0 4 0;
 #X connect 15 0 1 0;
 #X connect 16 0 19 0;
-#X connect 18 0 3 0;
+#X connect 18 0 39 0;
+#X connect 18 0 38 0;
 #X connect 19 0 18 1;
 #X connect 20 0 19 1;
 #X connect 21 0 34 0;
@@ -80,4 +84,7 @@
 #X connect 35 0 18 0;
 #X connect 36 0 37 0;
 #X connect 37 0 18 0;
+#X connect 38 0 40 1;
+#X connect 39 0 40 0;
+#X connect 40 0 3 0;
 #X coords 0 -1 1 1 280 140 1 10 10;
