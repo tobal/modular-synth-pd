@@ -1,0 +1,22 @@
+#N canvas 1084 112 489 763 10;
+#X obj 57 46 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 57 75 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 56 103 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 58 128 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 38 42 A;
+#X text 39 73 D;
+#X text 38 100 S;
+#X text 38 125 R;
+#X floatatom 75 191 5 0 0 0 - - -;
+#X floatatom 124 190 5 0 0 0 - - -;
+#X floatatom 185 195 5 0 0 0 - - -;
+#X floatatom 250 198 5 0 0 0 - - -;
+#X connect 0 0 8 0;
+#X connect 1 0 9 0;
+#X connect 2 0 10 0;
+#X connect 3 0 11 0;
+#X coords 0 -1 1 1 200 150 1 10 10;
