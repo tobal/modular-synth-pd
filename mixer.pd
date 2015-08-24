@@ -1,31 +1,37 @@
-#N canvas 1009 231 619 577 10;
-#X obj 89 57 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+#N canvas 715 236 619 577 10;
 #X obj 271 27 inlet~;
 #X obj 347 27 inlet~;
 #X obj 416 27 inlet~;
 #X obj 480 27 inlet~;
-#X obj 125 57 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 158 57 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 53 57 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
 #X obj 309 136 *~;
 #X obj 368 136 *~;
 #X obj 423 136 *~;
 #X obj 262 136 *~;
 #X obj 328 285 outlet~;
-#X connect 0 0 8 1;
-#X connect 1 0 11 0;
-#X connect 2 0 8 0;
-#X connect 3 0 9 0;
-#X connect 4 0 10 0;
-#X connect 5 0 9 1;
-#X connect 6 0 10 1;
-#X connect 7 0 11 1;
-#X connect 8 0 12 0;
-#X connect 9 0 12 0;
-#X connect 10 0 12 0;
-#X connect 11 0 12 0;
-#X coords 0 -1 1 1 200 200 1 20 20;
+#X obj 21 21 cnv 15 150 240 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X obj 36 37 cnv 15 120 160 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 36 206 cnv 15 120 40 empty empty Mixer 22 20 0 26 -233017 -66577
+0;
+#X obj 76 53 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 102 53 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 129 53 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 49 53 vsl 15 128 0.1 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X connect 0 0 7 0;
+#X connect 1 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 6 0;
+#X connect 4 0 8 0;
+#X connect 5 0 8 0;
+#X connect 6 0 8 0;
+#X connect 7 0 8 0;
+#X connect 12 0 4 1;
+#X connect 13 0 5 1;
+#X connect 14 0 6 1;
+#X connect 15 0 7 1;
+#X coords 0 -1 1 1 150 240 1 20 20;
