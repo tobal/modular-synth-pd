@@ -1,15 +1,19 @@
-#N canvas 953 400 450 300 10;
+#N canvas 768 451 540 395 10;
 #X obj 191 26 inlet~;
 #X obj 285 26 inlet~;
-#X obj 29 43 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 289 114 dac~;
-#X obj 88 42 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 178 91 env~ 28;
 #X obj 182 150 env~ 28;
+#X obj 10 10 cnv 15 140 220 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X obj 27 27 cnv 15 106 143 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 38 38 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 86 38 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 27 182 cnv 15 106 35 empty empty Audio_OUT 9 17 0 17 -233017
+-66577 0;
+#X connect 0 0 2 0;
 #X connect 0 0 3 0;
-#X connect 0 0 5 0;
-#X connect 1 0 3 1;
-#X connect 1 0 6 0;
-#X connect 5 0 2 0;
-#X connect 6 0 4 0;
-#X coords 0 -1 1 1 130 170 1 10 10;
+#X connect 1 0 2 1;
+#X connect 1 0 4 0;
+#X coords 0 -1 1 1 140 220 1 10 10;
