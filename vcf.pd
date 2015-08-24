@@ -1,22 +1,6 @@
-#N canvas 539 112 624 432 10;
-#X obj 42 86 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 41 48 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 42 124 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X text 38 28 Cutoff;
-#X text 36 65 Resonance;
-#X text 36 102 Modulation;
-#X obj 190 47 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
--1 0;
-#X text 188 27 Filter type;
-#X text 209 44 LP;
-#X text 209 61 HP;
-#X text 209 76 BP;
-#X text 242 13 CV;
+#N canvas 753 246 783 505 10;
 #X obj 73 204 inlet~;
-#X floatatom 193 170 5 0 0 0 - - -;
+#X floatatom 191 177 5 0 0 0 - - -;
 #X obj 324 40 inlet~;
 #X obj 142 205 == 0;
 #X obj 191 203 == 1;
@@ -30,32 +14,55 @@
 #X obj 18 254 mtof;
 #X obj 35 228 mtof;
 #X obj 214 389 outlet~;
-#X obj 299 169 *~;
+#X obj 321 184 *~;
 #X obj 217 355 +~;
-#X connect 0 0 25 0;
-#X connect 1 0 24 0;
-#X connect 2 0 27 1;
-#X connect 6 0 13 0;
-#X connect 12 0 18 0;
-#X connect 12 0 19 0;
-#X connect 12 0 20 0;
-#X connect 13 0 15 0;
-#X connect 13 0 16 0;
-#X connect 13 0 17 0;
-#X connect 14 0 27 0;
-#X connect 15 0 18 1;
-#X connect 16 0 19 1;
-#X connect 17 0 20 1;
-#X connect 18 0 21 0;
-#X connect 19 0 22 0;
-#X connect 20 0 23 0;
-#X connect 21 0 28 0;
-#X connect 22 0 28 0;
-#X connect 23 0 28 0;
-#X connect 24 0 21 1;
-#X connect 24 0 22 1;
-#X connect 24 0 23 2;
-#X connect 25 0 23 1;
-#X connect 27 0 28 1;
-#X connect 28 0 26 0;
-#X coords 0 -1 1 1 250 150 1 10 10;
+#X obj 10 11 cnv 15 290 160 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X obj 28 27 cnv 15 160 125 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 200 104 cnv 15 82 48 empty empty VCO 15 25 0 30 -228856 -66577
+0;
+#X obj 200 27 cnv 15 82 67 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 44 86 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 43 48 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 44 124 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 40 28 Cutoff;
+#X text 38 65 Resonance;
+#X text 38 102 Modulation;
+#X obj 207 46 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X text 205 26 Filter type;
+#X text 226 43 LP;
+#X text 226 60 HP;
+#X text 226 75 BP;
+#X connect 0 0 6 0;
+#X connect 0 0 7 0;
+#X connect 0 0 8 0;
+#X connect 1 0 3 0;
+#X connect 1 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 15 0;
+#X connect 3 0 6 1;
+#X connect 4 0 7 1;
+#X connect 5 0 8 1;
+#X connect 6 0 9 0;
+#X connect 7 0 10 0;
+#X connect 8 0 11 0;
+#X connect 9 0 16 0;
+#X connect 10 0 16 0;
+#X connect 11 0 16 0;
+#X connect 12 0 9 1;
+#X connect 12 0 10 1;
+#X connect 12 0 11 2;
+#X connect 13 0 11 1;
+#X connect 15 0 16 1;
+#X connect 16 0 14 0;
+#X connect 21 0 13 0;
+#X connect 22 0 12 0;
+#X connect 23 0 15 1;
+#X connect 27 0 1 0;
+#X coords 0 -1 1 1 290 160 1 10 10;
