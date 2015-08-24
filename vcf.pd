@@ -20,7 +20,7 @@
 0;
 #X obj 28 27 cnv 15 160 125 empty empty empty 20 12 0 14 -233017 -66577
 0;
-#X obj 200 104 cnv 15 82 48 empty empty VCO 15 25 0 30 -228856 -66577
+#X obj 200 104 cnv 15 82 48 empty empty VCF 15 25 0 30 -228856 -66577
 0;
 #X obj 200 27 cnv 15 82 67 empty empty empty 20 12 0 14 -233017 -66577
 0;
